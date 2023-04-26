@@ -30,8 +30,10 @@
       <!-- microsoft logo -->
       <div class="logo text-center flex md:order-1">
         <div>Microsoft icon</div>
+        <!-- there is some error in feature due to which it is creating menu in mobile view -->
         <div
-          class="features md:flex inset-0 mx-4 md:space-x-2 w-fit md:w-auto bg-gray-500 md:mx-4"
+        
+          class="features absolute w-fit md:w-auto inset-0 md:flex md:mx-4 md:space-x-2 bg-gray-500 md:bg-white md:mx-4 -tanslate-x-100 md:translate-x-0 md:static"
         >
           <div class="items">Microsoft 365</div>
           <div class="items">Teams</div>
@@ -48,6 +50,9 @@
         <div>Cart and account icon</div>
       </div>
     </div>
+
+    <!-- coursel slider -->
+    <div class="slider"></div>
     <!--script for tailwind  -->
     <script src="https://cdn.tailwindcss.com"></script>
   </body>
