@@ -32,7 +32,6 @@
         <div>Microsoft icon</div>
         <!-- there is some error in feature due to which it is creating menu in mobile view -->
         <div
-        
           class="features absolute w-fit md:w-auto inset-0 md:flex md:mx-4 md:space-x-2 bg-gray-500 md:bg-white md:mx-4 -tanslate-x-100 md:translate-x-0 md:static"
         >
           <div class="items">Microsoft 365</div>
@@ -52,7 +51,26 @@
     </div>
 
     <!-- coursel slider -->
-    <div class="slider"></div>
+    <div class="slider flex flex-col-reverse md:flex-row bg-blue-200 mx-2">
+      <!-- div containing the text of the slider-->
+      <div class="left flex flex-col justify-center">
+        <h1 class="mx-5 text-4xl">Microsoft 365</h1>
+        <p class="mx-5 W-3/4 mt-5 mb-5">
+          Turn your ideas into reality, stay safer online and off,
+          focus on what matters most with Microsoft 365 apps
+        </p>
+        <div class="flex mx-5 align-text-bottom">
+          <button class="bg-blue-500 mr-4 p-2 text-white rounded hover:bg-blue-600">
+            For one person
+          </button>
+          <p class="mt-2.5 hover:underline cursor-pointer">For upto six people</p>
+        </div>
+      </div>
+      <!-- div containing the images of the slider -->
+      <div class="right">
+        <img src="images/2.jpeg" alt="" />
+      </div>
+    </div>
     <!--script for tailwind  -->
     <script src="https://cdn.tailwindcss.com"></script>
   </body>
