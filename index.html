@@ -7,6 +7,15 @@
     <title>Microsoft – Cloud, Computers, Apps &amp; Gaming</title>
     <!-- link to style.css -->
     <link rel="stylesheet" href="style.css" />
+    <!-- using tailwind elements -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css"
+    />
     <!-- microsoft favicon -->
     <link rel="shortcut icon" href="images/11.png" type="image/x-icon" />
   </head>
@@ -21,7 +30,10 @@
           <div class="line h-0.5 w-6 my-1 bg-black"></div>
         </div>
         <!-- search div -->
-        <div class="search md:hidden">search icon</div>
+        <div class="search md:hidden">
+          search
+          <!-- <img src="images/search.png" alt="search icon"> -->
+        </div>
       </div>
       <!-- microsoft logo -->
       <div class="logo text-center flex md:order-1">
@@ -49,9 +61,10 @@
     </div>
 
     <!-- coursel slider -->
-    <div class="slider flex flex-col-reverse md:flex-row mx-2 bg-[#c8e3fb]">
-      <!-- div containing the text of the slider-->
-      <div class="left flex flex-col justify-center">
+    <!-- <div class="slider flex flex-col-reverse md:flex-row justify-between items-center"> -->
+    <!-- bg-[#bcdcfb] -->
+    <!-- div containing the text of the slider-->
+    <!-- <div class="left flex flex-col justify-center">
         <h1 class="mx-5 text-4xl">Microsoft 365</h1>
         <p class="mx-5 W-3/4 mt-5 mb-5">
           Turn your ideas into reality, stay safer online and off, focus on what
@@ -67,13 +80,47 @@
             For upto six people
           </p>
         </div>
-      </div>
-      <!-- div containing the images of the slider -->
-      <div class="right">
-        <img src="images/2.jpeg" alt="" />
+      </div> -->
+    <!-- div containing the images of the slider -->
+    <!-- <div class="right bg-cover bg-center">
+        <img src="images/2.jpeg" alt="slider image" />
+      </div> -->
+    <!-- <img class="justify-between items-center object-fill object-center" src="images/2.jpeg" alt="slider image" />
+    </div> -->
+
+    <div
+      id="carouselExampleSlidesOnly"
+      class="relative"
+      data-te-carousel-init
+      data-te-carousel-slide
+    >
+      <!--Carousel items-->
+      <div
+        class="relative w-full overflow-hidden after:clear-both after:block after:content-['']"
+      >
+        <!--First item-->
+        <div
+          class="relative float-left -mr-[100%] w-full transition-transform duration-100 ease-in-out motion-reduce:transition-none"
+          data-te-carousel-item
+          data-te-carousel-active
+        >
+          <img src="images/13.jpeg" class="block w-full" alt="minecraft" />
+        </div>
+        <!--Second item-->
+        <div
+          class="relative float-left -mr-[100%] hidden w-full transition-transform duration-100 ease-in-out motion-reduce:transition-none"
+          data-te-carousel-item
+        >
+          <img src="images/2.jpeg" class="block w-full" alt="microsoft 365" />
+        </div>
       </div>
     </div>
     <!--script for tailwind  -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- internal script -->
+    <script src="script.js"></script>
+    <!-- tailwind elements script file -->
+    <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
   </body>
 </html>
