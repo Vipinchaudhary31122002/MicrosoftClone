@@ -22,7 +22,7 @@
   <body>
     <div class="container mx-auto">
       <!-- navbar -->
-      <div class="navbar flex justify-between items-center p-4">
+      <div class="navbar flex justify-between items-center p-3">
         <!-- hamburger menu logo -->
         <div class="flex justify-center items-center md:order-2">
           <div class="hamburger inline-block p-4 cursor-pointer md:hidden">
@@ -37,9 +37,7 @@
         </div>
         <!-- microsoft logo -->
         <div class="logo text-center flex md:order-1">
-          <div class="w-28">
-            <img src="images/12.png" alt="Microsoft logo" />
-          </div>
+            <img class="w-28" src="images/12.png" alt="Microsoft logo" />
           <!-- humburger menu items -->
           <div
             class="features absolute w-fit md:static md:w-auto bg-gray-200 md:bg-white inset-0 md:flex md:mx-4 md:space-x-2 -translate-x-96 md:translate-x-0"
@@ -53,16 +51,24 @@
           </div>
         </div>
         <!-- cart and account div -->
-        <div class="CartAccount text-center md:order-3 flex">
+        <div
+          class="CartAccount text-center md:order-3 flex items-center md:mr-10 mr-4 justify-center space-x-6 flex-row"
+        >
           <!-- search icon -->
-          <div class="search hidden md:block">All Microsoft Search</div>
-          <div>Cart and account icon</div>
+          <div
+            class="search hidden flex flex-row space-x-6 items-center justify-center md:flex"
+          >
+            <div>All Microsoft</div>
+            <img class="w-4" src="images/search.png" alt="search icon" />
+          </div>
+          <img class="w-4" src="images/shopping-cart.png" />
+          <img class="w-4" src="images/account.png" />
         </div>
       </div>
 
       <!-- coursel slider -->
       <div
-        class="slider flex flex-col-reverse md:flex-row justify-between bg-[#bddcf9] items-center "
+        class="slider flex flex-col-reverse md:flex-row justify-between bg-[#bddcf9] items-center"
       >
         <!-- div containing the text of the slider-->
         <div
@@ -86,7 +92,37 @@
         </div>
         <!-- div containing the images of the slider -->
         <div class="right bg-cover bg-center">
-          <img class="w-96 md:w-[64rem]"src="images/2.png" alt="slider image" />
+          <img
+            class="w-96 md:w-[64rem]"
+            src="images/2.png"
+            alt="slider image"
+          />
+        </div>
+      </div>
+
+      <!-- bottom box below the slider -->
+      <div
+        class="promo flex space-x-4 items-center justify-center md:mt-20 mt-2 md:flex-row flex-col"
+      >
+        <div class="items flex flex-col items-center mx-4 space-x-2">
+          <img class="w-10" src="images/7.png" alt="" />
+          <span class="font-bold text-blue-600 underline"
+            >Choose your Microsoft 365</span
+          >
+        </div>
+        <div class="items flex flex-col items-center mx-4 space-x-2">
+          <img class="w-10" src="images/9.webp" alt="" />
+          <span class="font-bold text-blue-600 underline"
+            >Explore Surface devices</span
+          >
+        </div>
+        <div class="items flex flex-col items-center mx-4 space-x-2">
+          <img class="w-10" src="images/3.png" alt="" />
+          <span class="font-bold text-blue-600 underline">Buy Xbox games</span>
+        </div>
+        <div class="items flex flex-col items-center mx-4 space-x-2">
+          <img class="w-10" src="images/7.png" alt="" />
+          <span class="font-bold text-blue-600 underline">Get Windows 11</span>
         </div>
       </div>
     </div>
